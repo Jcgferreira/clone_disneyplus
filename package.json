@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,8 +12,15 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^6.0.0",
     "sass": "^1.85.0"
+  },
+  "dependencies": {
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^8.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^11.0.1"
   }
 }
