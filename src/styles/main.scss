@@ -88,10 +88,23 @@ body {
     }
 }
 
+.title-info {
+    color: variaveis.$title-info-color;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
 .link-text {
     @include text(18px);
     color: variaveis.$corTextS;
     text-decoration: underline;
+}
+
+.spacer-info {
+    color: #a3a3a3;
+    margin: 0 4px;
 }
 
 .button {
@@ -183,4 +196,23 @@ body {
                 }
             }
         }
+}
+
+.info-film {
+    text-align: justify;
+    margin-left: 80px;
+
+    @media (max-width: 768px) {
+        margin: 20px;
+    }
+
+
+    &-synopsis {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        max-width: 100%;
+        margin-top: 12px
+    }
 }

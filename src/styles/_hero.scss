@@ -1,18 +1,20 @@
 @use 'variaveis';
 
 .hero {
-    padding: 5.6vw;
     min-height: 80vh;
-    background-image: url(../images/hero_desktop.jpeg);
+    background-image: url(../images/spider_man_wallpaper.jpg);
     text-align: center;
     background-size: cover;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
 
     @media (max-width: 768px) {
-        background-image: url(../images/hero_celular.jpeg);
-        padding-top: calc(50vw + 25px);
+        background-image: url(../images/spider_man_wallpaper.jpg);
+        padding-top: 0;
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -55px;
+        min-height: 60vh;
     }
 
     .button {
@@ -21,7 +23,30 @@
     }
 
     &__content {
-        max-width: 640px;
+        max-width: 880px;
+        padding-bottom: 30px;
+        padding-right: 200px;
+        background: linear-gradient(90deg, #181818 10%, 
+        hsla(0, 0%, 9%, .98) 20%, 
+        hsla(0, 0%, 9%, .97) 25%, 
+        hsla(0, 0%, 9%, .95) 35%, 
+        hsla(0, 0%, 9%, .94) 40%, 
+        hsla(0, 0%, 9%, .92) 45%, 
+        hsla(0, 0%, 9%, .9) 50%, 
+        hsla(0, 0%, 9%, .87) 55%, 
+        hsla(0, 0%, 9%, .82) 60%, 
+        hsla(0, 0%, 9%, .75) 65%, 
+        hsla(0, 0%, 9%, .63) 70%, 
+        hsla(0, 0%, 9%, .45) 75%, 
+        hsla(0, 0%, 9%, .27) 80%, 
+        hsla(0, 0%, 9%, .15) 85%, 
+        hsla(0, 0%, 9%, .08) 90%, 
+        hsla(0, 0%, 9%, .03) 95%, 
+        hsla(0, 0%, 9%, 0));
+        @media (max-width: 768px) {
+            background: none;
+            padding: 0;
+        }
 
         &__branding {
             max-width: 320px;
@@ -29,6 +54,25 @@
 
             @media (max-width: 768px) {
                 max-width: 180px;
+                margin: 0;
+                margin-bottom: 110px;
+            }
+
+            img {
+                max-width: 750px;
+                @media (max-width: 768px) {
+                    max-width: 50vw;
+                    margin-top: 12px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                max-width: 180px;
+            }
+
+            h2 {
+                padding-bottom: 12px;
+                margin-bottom: 24px;
             }
         }
 
